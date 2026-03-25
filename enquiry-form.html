@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/Nobel_Academy_Logo.png">
+    <title>Shahada's Nobel Academy — Enquiry Form</title>
+    <link rel="stylesheet" href="registration-form-styles.css">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <section class="header">
+            <div class="brand">
+                <div class="header-logo">
+                    <img src="assets/Nobel_Academy_Logo.png" alt="Nobel Academy Logo">
+                </div>
+                <div class="header-heading">
+                    <h1>Shahada's Nobel Academy</h1>
+                </div>
+            </div>
+        </section>
+
+        <form id="enquiryform">
+
+            <!-- Form Container -->
+            <div class="form-container">
+                <h2>Enquiry Form</h2>
+
+                <section class="section-card" aria-labelledby="studentHead">
+                    <div class="card-heading">
+                        <h2 id="studentHead">Student Details</h2>
+                        <p>All fields marked * are mandatory.</p>
+                    </div>
+
+                    <div class="grid">
+                        <div class="field">
+                            <input id="fullName" name="fullName" type="text" placeholder="">
+                            <label for="fullName">Full Name *</label>
+                        </div>
+
+                        <div class="field">
+                            <input id="dob" name="dob" type="date" placeholder="">
+                            <label for="dob">Date of Birth *</label>
+                        </div>
+
+                        <div class="field">
+                            <input id="age" name="age" type="text" placeholder="" readonly>
+                            <label for="age">Age (auto)</label>
+                        </div>
+
+                        <div class="field">
+                            <select id="gender" name="gender" required>
+                                <option value=""></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label for="gender">Gender *</label>
+                        </div>
+
+                        <div class="field">
+                            <select id="classSelect" name="classSelect" required>
+                                <option value=""></option>
+                                <option value="1th">1th</option>
+                                <option value="2th">2th</option>
+                                <option value="3th">3th</option>
+                                <option value="4th">4th</option>
+                                <option value="5th">5th</option>
+                                <option value="6th">6th</option>
+                                <option value="7th">7th</option>
+                                <option value="8th">8th</option>
+                                <option value="9th">9th</option>
+                                <option value="10th">10th</option>
+                                <option value="11th NEET Preparation">11th NEET Preparation</option>
+                                <option value="11th IIT-JEE">11th IIT-JEE</option>
+                                <option value="11th MHT-CET">11th MHT-CET</option>
+                                <option value="12th NEET Preparation">12th NEET Preparation</option>
+                                <option value="12th IIT-JEE">12th IIT-JEE</option>
+                                <option value="12th MHT-CET">12th MHT-CET</option>
+                                <option value="NEET Repeater">NEET Repeater</option>
+                                <option value="NEET Crash Course">NEET Crash Course</option>
+                            </select>
+                            <label for="classSelect">Class * (Select the class you want to take admission in)</label>
+                        </div>
+
+                        <div class="field">
+                            <input id="studentMobile" name="studentMobile" type="tel" placeholder="">
+                            <label for="studentMobile">Mobile Number *</label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Declaration card -->
+                <section class="section-card" aria-labelledby="decHead">
+                    <div class="card-heading">
+                        <h2 id="decHead">Declaration</h2>
+                    </div>
+
+                    <div class="declaration-box">
+                        I hereby declare that all information provided in this application is true and correct to the
+                        best of my knowledge.
+                        I authorize Nobel Academy to use this information for admission and communication purposes.
+                    </div>
+
+                    <div style="margin-top:12px">
+                        <label style="font-size:14px;color:var(--muted);display:flex;gap:8px;align-items:center">
+                            <input type="checkbox" id="acceptTerms"> I accept the declaration *
+                        </label>
+                    </div>
+                </section>
+
+                <!-- Actions card -->
+                <section class="section-card" aria-labelledby="actHead">
+                    <div class="card-heading">
+                        <h2 id="actHead">Actions</h2>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="submit" class="btn submit-btn" id="submitBtn">
+                            <span class="btn-text">Submit Application</span>
+                            <span class="btn-loader hidden"></span>
+                        </button>
+                        <button type="button" id="resetBtn" class="btn reset-btn">Reset Form</button>
+                    </div>
+                </section>
+
+            </div>
+
+        </form>
+
+        <!-- SUCCESS MODAL -->
+        <div id="successOverlay" class="overlay hidden">
+            <div class="success-card">
+                <div class="checkmark">✓</div>
+                <h2>Form Submitted</h2>
+                <p>
+                    Your Enquiry form has been submitted successfully.<br>
+                    Our team will get back to you within <strong>24–48 hours</strong>.
+                </p>
+                <p class="redirect-note">Redirecting to home page...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="enquiry-form-script.js"></script>
+
+</body>
+
+
+</html>
