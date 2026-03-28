@@ -241,7 +241,7 @@ applyBtn.addEventListener('click', () => {
         applyBtn.disabled = true;
 
     } 
-    else if (code === "ABDULKHALEEK") {
+    else if (code === "KHALEEK77") {
         finalAmount = 10000; // ₹100
         referralApplied = true;
 
