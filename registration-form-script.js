@@ -63,11 +63,8 @@ const marksLabel = document.getElementById("marksLable");
 classSelect.addEventListener("change", function () {
     const selectedText = this.options[this.selectedIndex].text;
 
-    if (selectedText.includes("10th")) marksLabel.textContent = "Class 9th Percentage * (In case the exam is not completed, Enter 0)";
-    else if (selectedText.includes("11th")) marksLabel.textContent = "Class 10th Percentage * (In case the exam is not completed, Enter 0)";
-    else if (selectedText.includes("12th")) marksLabel.textContent = "Class 10th Percentage * (In case the exam is not completed, Enter 0)";
-    else if (selectedText.includes("NEET Repeater")) marksLabel.textContent = "Class 12th Percentage * (In case the exam is not completed, Enter 0)";
-    else if (selectedText.includes("NEET Crash Course")) marksLabel.textContent = "Class 12th Percentage * (In case the exam is not completed, Enter 0)";
+    if (selectedText.includes("11th")) marksLabel.textContent = "Class 10th Percentage * (If result is not declared, enter 0)";
+    else if (selectedText.includes("12th")) marksLabel.textContent = "Class 10th Percentage * (If result is not declared, enter 0)";
     else marksLabel.textContent = "Previous Class Percentage * (In case the exam is not completed, Enter 0)";
 });
 
