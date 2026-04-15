@@ -65,7 +65,7 @@ classSelect.addEventListener("change", function () {
 
     if (selectedText.includes("11th")) marksLabel.textContent = "Class 10th Percentage * (If result is not declared, enter 0)";
     else if (selectedText.includes("12th")) marksLabel.textContent = "Class 10th Percentage * (If result is not declared, enter 0)";
-    else marksLabel.textContent = "Previous Class Percentage * (In case the exam is not completed, Enter 0)";
+    else marksLabel.textContent = "Previous Class Percentage * (If result is not declared, enter 0)";
 });
 
 /* ==================================== */
