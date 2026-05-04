@@ -255,7 +255,7 @@ applyBtn.addEventListener('click', () => {
 
     }
     else if (code === "ZIS") {
-        finalAmount = 00; // ₹100
+        finalAmount = 00; // 0
         referralApplied = true;
 
         discountMsg.style.color = "green";
