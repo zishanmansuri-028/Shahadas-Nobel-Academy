@@ -400,3 +400,26 @@ body {
         font-size: 16px;
     }
 }
+
+/* ============================= */
+/*        TOP SLIDING ALERT      */
+/* ============================= */
+.top-alert {
+    position: fixed;
+    top: -60px; /* hidden initially */
+    left: 0;
+    width: 100%;
+    background: #ef4444;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 99999;
+    transition: top 0.5s ease;
+}
+
+/* show animation */
+.top-alert.show {
+    top: 0;
+}
