@@ -254,7 +254,7 @@ form.addEventListener('submit', function (e) {
 
     let valid = true;
 
-    const required = ['fullName', 'dob', 'gender', 'classSelect', 'school', 'marks', 'studentMobile', 'email', 'fatherName', 'fatherMobile', 'aadhaar', 'street', 'pincode', 'city'];
+    const required = ['fullName', 'dob', 'gender', 'classSelect', 'school', 'marks', 'studentMobile', 'email', 'fatherName', 'fatherMobile', 'street', 'pincode', 'city'];
 
     required.forEach(id => {
         const el = document.getElementById(id);
