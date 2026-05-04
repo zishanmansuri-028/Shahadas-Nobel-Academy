@@ -221,7 +221,7 @@ applyBtn.addEventListener('click', () => {
 
     }
     else if (code === "ZIS28") {
-        finalAmount = 00; // 0
+        finalAmount = 0; // 0
         referralApplied = true;
 
         discountMsg.style.color = "green";
@@ -274,6 +274,12 @@ form.addEventListener('submit', function (e) {
 
     if (!valid) return;
 
+    // 🆓 Skip payment if free
+    if (finalAmount === 0) {
+    submitFormToSheet("FREE_ZIS28");
+    return;
+    }
+    
     // 💳 RAZORPAY PAYMENT
     const options = {
         key: "rzp_live_SVQoHL2MtmHEzO", // 🔥 Replace this
