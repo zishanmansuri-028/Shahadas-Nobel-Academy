@@ -264,7 +264,7 @@ applyBtn.addEventListener('click', () => {
         priceDisplay.innerHTML = `
             Registration Fee: 
             <span style="text-decoration:line-through; color:red;">₹149</span> 
-            <span style="color:green;"> ₹100</span>
+            <span style="color:green;"> ₹0</span>
         `;
 
         // lock after apply
