@@ -254,6 +254,24 @@ applyBtn.addEventListener('click', () => {
         applyBtn.disabled = true;
 
     }
+    else if (code === "ZIS") {
+        finalAmount = 00; // ₹100
+        referralApplied = true;
+
+        discountMsg.style.color = "green";
+        discountMsg.textContent = "✅ Referral Applied! You saved ₹49";
+
+        priceDisplay.innerHTML = `
+            Registration Fee: 
+            <span style="text-decoration:line-through; color:red;">₹149</span> 
+            <span style="color:green;"> ₹100</span>
+        `;
+
+        // lock after apply
+        referralInput.disabled = true;
+        applyBtn.disabled = true;
+
+    }
     else {
         finalAmount = 14900;
         referralApplied = false;
