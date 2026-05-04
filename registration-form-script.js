@@ -295,4 +295,18 @@ document.getElementById('resetBtn').onclick = () => {
         ageInput.value = '';
     }
 
+// Show sliding alert on page load
+window.addEventListener('load', () => {
+    const alertBar = document.getElementById('topAlert');
+
+    setTimeout(() => {
+        alertBar.classList.add('show');
+    }, 500); // slide down after 0.5s
+
+    // Optional: auto hide after 6 seconds
+    setTimeout(() => {
+        alertBar.classList.remove('show');
+    }, 6000);
+});
+
 };
