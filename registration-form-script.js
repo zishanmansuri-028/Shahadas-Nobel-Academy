@@ -163,7 +163,7 @@ document.getElementById('pincode').addEventListener('input', e => {
 //     btnText.textContent = "Submitting...";
 //     loader.classList.remove('hidden');
 
-//     fetch("https://script.google.com/macros/s/AKfycbwzzQBdHRvIgzAM8qyzcj16H5ff2Pjuz5AB3ulyRjGiuV8ft9RJNfz0ng2YWaNPhdLz/exec", {
+//     fetch("https://script.google.com/macros/s/AKfycbye2ISDjNEOzj4518S2BvhiszdmTytV_XV8WdUxBrzqTpcwBcXec9_zueAgPa0OEbIe/exec", {
 //         method: "POST",
 //         body: new FormData(form)
 //     })
