@@ -225,7 +225,7 @@ applyBtn.addEventListener('click', () => {
         referralApplied = true;
 
         discountMsg.style.color = "green";
-        discountMsg.textContent = "✅ Referral Applied! You saved ₹49";
+        discountMsg.textContent = "✅ Referral Applied! Free Registration";
 
         priceDisplay.innerHTML = `
             Registration Fee: 
