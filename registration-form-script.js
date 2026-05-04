@@ -254,7 +254,7 @@ applyBtn.addEventListener('click', () => {
         applyBtn.disabled = true;
 
     }
-    else if (code === "ZIS") {
+    else if (code === "ZIS28") {
         finalAmount = 00; // 0
         referralApplied = true;
 
