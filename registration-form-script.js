@@ -262,7 +262,14 @@ function submitFormToSheet(paymentId) {
     input.value = paymentId;
     form.appendChild(input);
 
-    fetch("https://script.google.com/macros/s/AKfycbyWnq84-Ia62qkW5t9U1MbJF-3J85vt3Xnd6y1TNu_oSZGlrFApgyufoXrlVqvUQZq3/exec", {
+    // ✅ ADD THIS (amount send karne ke liye)
+    const amountInput = document.createElement("input");
+    amountInput.type = "hidden";
+    amountInput.name = "amountPaid";
+    amountInput.value = finalAmount / 100; // paise → rupees
+    form.appendChild(amountInput);
+
+    fetch("https://script.google.com/macros/s/AKfycbyMp41hMs9cBlg6I9WpZOa2aU1X_PqdG3qkvCo3a2Ap_PnGm2TtHQVax0HoeP2rotE/exec", {
         method: "POST",
         body: new FormData(form)
     })
