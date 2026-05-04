@@ -76,18 +76,15 @@ const marksInput = document.getElementById('marks');
 marksInput.addEventListener('input', () => {
     let digits = marksInput.value.replace(/[^0-9]/g, '');
 
-    // Agar koi number nahi hai → empty rakho
     if (digits === '') {
         marksInput.value = '';
         return;
     }
 
-    // Optional: limit 0–100
     if (+digits > 100) digits = '100';
 
     marksInput.value = digits + '%';
 
-    // Cursor hamesha % se pehle
     const pos = marksInput.value.indexOf('%');
     marksInput.setSelectionRange(pos, pos);
 });
@@ -101,23 +98,6 @@ marksInput.addEventListener('keydown', (e) => {
         e.preventDefault();
         marksInput.setSelectionRange(percentIndex, percentIndex);
     }
-});
-
-
-/* ==================================== */
-/*    AADHAAR (XXXX XXXX XXXX) FORMAT   */
-/* ==================================== */
-const aadhaarInput = document.getElementById('aadhaar');
-
-aadhaarInput.addEventListener('input', () => {
-    let value = aadhaarInput.value.replace(/\D/g, ''); // remove non-digits
-
-    // limit to 12 digits
-    value = value.substring(0, 12);
-
-    // add space after every 4 digits
-    let formatted = value.match(/.{1,4}/g);
-    aadhaarInput.value = formatted ? formatted.join(' ') : '';
 });
 
 /* ============================= */
