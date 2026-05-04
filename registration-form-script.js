@@ -262,7 +262,7 @@ function submitFormToSheet(paymentId) {
     input.value = paymentId;
     form.appendChild(input);
 
-    fetch("https://script.google.com/macros/s/AKfycbwzzQBdHRvIgzAM8qyzcj16H5ff2Pjuz5AB3ulyRjGiuV8ft9RJNfz0ng2YWaNPhdLz/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyWnq84-Ia62qkW5t9U1MbJF-3J85vt3Xnd6y1TNu_oSZGlrFApgyufoXrlVqvUQZq3/exec", {
         method: "POST",
         body: new FormData(form)
     })
