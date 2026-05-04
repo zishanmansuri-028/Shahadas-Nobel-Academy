@@ -269,7 +269,7 @@ function submitFormToSheet(paymentId) {
     amountInput.value = finalAmount / 100; // paise → rupees
     form.appendChild(amountInput);
 
-    fetch("https://script.google.com/macros/s/AKfycbyMp41hMs9cBlg6I9WpZOa2aU1X_PqdG3qkvCo3a2Ap_PnGm2TtHQVax0HoeP2rotE/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyX2s05BYBYnd_5kUOkYR-A5p2wzOWzfu6LIz25CHBgjoFYNpDEPXu5vnJB4Jc9M04o/exec", {
         method: "POST",
         body: new FormData(form)
     })
