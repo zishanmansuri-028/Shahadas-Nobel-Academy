@@ -199,44 +199,10 @@ const priceDisplay = document.getElementById('priceDisplay');
 
 applyBtn.addEventListener('click', () => {
     const code = referralInput.value.trim().toUpperCase();
-
-    if (code === "NOBEL2026") {
-        finalAmount = 10000; // ₹100
-        referralApplied = true;
-
-        discountMsg.style.color = "green";
-        discountMsg.textContent = "✅ Referral Applied! You saved ₹49";
-
-        priceDisplay.innerHTML = `
-            Registration Fee: 
-            <span style="text-decoration:line-through; color:red;">₹149</span> 
-            <span style="color:green;"> ₹100</span>
-        `;
-
-        // lock after apply
-        referralInput.disabled = true;
-        applyBtn.disabled = true;
-
-    } 
-    else if (code === "KHALEEK77") {
-        finalAmount = 10000; // ₹100
-        referralApplied = true;
-
-        discountMsg.style.color = "green";
-        discountMsg.textContent = "✅ Referral Applied! You saved ₹49";
-
-        priceDisplay.innerHTML = `
-            Registration Fee: 
-            <span style="text-decoration:line-through; color:red;">₹149</span> 
-            <span style="color:green;"> ₹100</span>
-        `;
-
-        // lock after apply
-        referralInput.disabled = true;
-        applyBtn.disabled = true;
-
-    }
-    else if (code === "VISHAL26") {
+    
+    const validCodes = ["NOBEL2026", "KHALEEK77", "VISHAL26"];
+    
+    if (validCodes.includes(code)) {
         finalAmount = 10000; // ₹100
         referralApplied = true;
 
